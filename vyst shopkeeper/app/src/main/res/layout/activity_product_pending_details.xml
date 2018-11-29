@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/main_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/_15sdp">
+
+
+        <TextView
+            style="@style/CustomTextAppearance.Semibold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="Order Details"
+            android:textColor="@color/colorBlack"
+            android:textSize="25dp"
+
+
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@color/colorLightGrey" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+
+            >
+
+            <TextView
+                android:id="@+id/tv_order_no"
+                style="@style/CustomTextAppearance.Semibold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="order no"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_14sdp"
+
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_price"
+                style="@style/CustomTextAppearance.Semibold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="price"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_14sdp"
+
+                android:textStyle="bold" />
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_items"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_order_no"
+                android:layout_marginTop="@dimen/_5sdp">
+
+
+            </android.support.v7.widget.RecyclerView>
+
+            <View
+                android:id="@+id/view_line"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/rv_items"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@color/colorLightGrey" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                style="@style/CustomTextAppearance.Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_line"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="order time"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:id="@+id/tv_del_time"
+                style="@style/CustomTextAppearance.Bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_time"
+
+                android:text="delivery"
+                android:textColor="@color/colorBlack"
+
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:id="@+id/tv_status"
+                style="@style/CustomTextAppearance.Italic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tv_time"
+
+                android:text="status"
+                android:textColor="@color/colorRed"
+
+                android:textSize="@dimen/_14sdp" />
+
+            <View
+                android:id="@+id/view_line_two"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/tv_del_time"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@color/colorLightGrey" />
+
+        </RelativeLayout>
+
+        <TextView
+            style="@style/CustomTextAppearance.Regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="I have to deliver to"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_12sdp" />
+
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/CustomTextAppearance.Semibold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:maxLines="1"
+            android:text="Name"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_16sdp"
+
+
+            />
+
+        <TextView
+            android:id="@+id/tv_loc_address"
+            style="@style/CustomTextAppearance.Semibold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:maxLines="1"
+            android:text="loc address"
+
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_16sdp"
+
+
+            />
+
+        <TextView
+            android:id="@+id/tv_address_id"
+            style="@style/CustomTextAppearance.Semibold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:maxLines="1"
+            android:text="loc id"
+
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_16sdp"
+
+
+            />
+
+
+        <RelativeLayout
+            android:id="@+id/rl_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp">
+
+            <ImageView
+                android:id="@+id/img_call"
+                android:layout_width="@dimen/_17sdp"
+                android:layout_height="@dimen/_17sdp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/call_icon" />
+
+            <TextView
+                android:id="@+id/tv_phone_no"
+                style="@style/CustomTextAppearance.Semibold"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_toRightOf="@+id/img_call"
+
+                android:maxLines="1"
+                android:text="phone no"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_16sdp"
+
+
+                />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_message"
+            style="@style/CustomTextAppearance.Regular"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+
+            android:layout_toRightOf="@+id/img_call"
+
+
+            android:text="Messages: "
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_16sdp"
+
+
+            />
+
+
+    </LinearLayout>
+
+
+</ScrollView>
+    </RelativeLayout>
+

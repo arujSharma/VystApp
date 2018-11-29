@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B3000000" >
+
+    <RelativeLayout
+        android:id="@+id/dialog_rel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/_15sdp"
+        android:background="@drawable/popup_bg_bg" >
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:gravity="center"
+            style="@style/CustomTextAppearance.Regular"
+            android:text="@string/discount_type"
+            android:textColor="@color/colorDarkGrey"
+            android:textSize="@dimen/_12sdp" />
+
+
+
+        <TextView
+            android:id="@+id/txt_flat"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_below="@+id/heading"
+            android:gravity="center"
+            android:text="Flat"
+            style="@style/CustomTextAppearance.Regular"
+            android:textColor="@color/colorDarkGrey"
+            android:textSize="@dimen/_17sdp" />
+
+        <TextView
+            android:id="@+id/txt_percentage"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_below="@+id/txt_flat"
+            android:gravity="center"
+            android:text="Percentage"
+            style="@style/CustomTextAppearance.Regular"
+            android:textColor="@color/colorDarkGrey"
+            android:textSize="@dimen/_17sdp" />
+
+        <TextView
+            android:id="@+id/txt_no_discount"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_below="@+id/txt_percentage"
+            android:gravity="center"
+            style="@style/CustomTextAppearance.Regular"
+            android:text="No Discount"
+            android:textColor="@color/colorDarkGrey"
+            android:textSize="@dimen/_17sdp" />
+
+
+
+        <TextView
+            android:id="@+id/cancel_text"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_below="@+id/txt_no_discount"
+            android:gravity="center"
+            android:text="Cancel"
+            style="@style/CustomTextAppearance.Bold"
+            android:textColor="@color/colorDarkGrey"
+            android:textSize="@dimen/_17sdp"
+           />
+    </RelativeLayout>
+
+</RelativeLayout>

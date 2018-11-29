@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="vyst.business.activites.LoginActivity"
+    android:background="@color/colorPrimary"
+    >
+
+
+    <ImageView
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_99sdp"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_40sdp"
+        />
+
+
+    <Button
+        android:id="@+id/tv_be_a_shopkeeper"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_margin="@dimen/_30sdp"
+        android:textColor="@color/colorWhite"
+        android:text="@string/be_a_shopkeeper"
+        android:layout_alignParentBottom="true"
+        style="@style/CustomTextAppearance.Semibold"
+        android:background="@drawable/button_bg_stroke"
+        />
+
+
+    <Button
+        android:id="@+id/tv_login"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+
+        android:layout_above="@+id/tv_be_a_shopkeeper"
+
+        style="@style/CustomTextAppearance.Semibold"
+        android:layout_marginRight="@dimen/_30sdp"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:background="@drawable/button_bg_filled"
+        android:text="@string/login"
+        android:textColor="@color/colorPrimary" />
+
+
+</RelativeLayout>

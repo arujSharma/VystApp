@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B3000000" >
+
+    <RelativeLayout
+        android:id="@+id/dialog_rel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/_15sdp"
+        android:background="@drawable/popup_bg_bg" >
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:gravity="center"
+            style="@style/CustomTextAppearance.Regular"
+            android:text="@string/options"
+            android:textColor="@color/colorDarkGrey"
+            android:textSize="@dimen/_12sdp" />
+
+
+
+        <TextView
+            android:id="@+id/txt_share"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_below="@+id/heading"
+            android:gravity="center"
+            android:text="Share Vyst app"
+            style="@style/CustomTextAppearance.Regular"
+            android:textColor="@color/colorDarkGrey"
+            android:textSize="@dimen/_17sdp" />
+
+        <TextView
+            android:id="@+id/txt_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_below="@+id/txt_share"
+            android:gravity="center"
+            android:text="Feedback"
+            style="@style/CustomTextAppearance.Regular"
+            android:textColor="@color/colorDarkGrey"
+            android:textSize="@dimen/_17sdp" />
+
+        <TextView
+            android:id="@+id/txt_call_us"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_below="@+id/txt_feedback"
+            android:gravity="center"
+            style="@style/CustomTextAppearance.Regular"
+            android:text="Call Us"
+            android:textColor="@color/colorDarkGrey"
+            android:textSize="@dimen/_17sdp" />
+
+        <TextView
+            android:id="@+id/txt_about_us"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_below="@+id/txt_call_us"
+            android:gravity="center"
+            style="@style/CustomTextAppearance.Regular"
+            android:text="About Us"
+            android:textColor="@color/colorDarkGrey"
+            android:textSize="@dimen/_17sdp" />
+
+        <TextView
+            android:id="@+id/txt_rate_us"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_below="@+id/txt_about_us"
+            android:gravity="center"
+            style="@style/CustomTextAppearance.Regular"
+            android:text="Rate Us"
+            android:textColor="@color/colorDarkGrey"
+            android:textSize="@dimen/_17sdp" />
+
+        <TextView
+            android:id="@+id/txt_logout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_below="@+id/txt_rate_us"
+            android:gravity="center"
+            style="@style/CustomTextAppearance.Regular"
+            android:text="Log Out"
+            android:textColor="@color/colorRed"
+            android:textSize="@dimen/_17sdp" />
+
+
+        <TextView
+            android:id="@+id/cancel_text"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_below="@+id/txt_logout"
+            android:gravity="center"
+            android:text="Cancel"
+            style="@style/CustomTextAppearance.Bold"
+            android:textColor="@color/colorDarkGrey"
+            android:textSize="@dimen/_17sdp"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

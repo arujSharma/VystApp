@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroung"
+    tools:context="vyst.business.activites.ProfileActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:background="@color/colorPrimary"
+        >
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="match_parent"
+
+            android:src="@drawable/back"
+            android:padding="@dimen/_13sdp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/colorWhite"
+            android:text="Profile"
+            style="@style/CustomTextAppearance.Semibold"
+            android:textSize="@dimen/_16sdp"
+            />
+
+
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_header"
+        android:layout_above="@+id/txt_add_product"
+        android:layout_marginBottom="@dimen/_10sdp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            >
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name_of_product"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textColor="@color/colorPrimary"
+                style="@style/CustomTextAppearance.Regular"
+                />
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:imeOptions="actionNext"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:background="@android:color/transparent"
+                android:textSize="@dimen/_16sdp"
+                android:hint="@string/milk_butter_curd"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textColorHint="@color/colorLightGrey"
+                android:textCursorDrawable="@null"
+
+
+                />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/colorPrimary"
+                android:layout_marginTop="@dimen/_1sdp"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/product_description"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:textColor="@color/colorPrimary"
+                style="@style/CustomTextAppearance.Regular"
+                />
+
+            <EditText
+                android:id="@+id/et_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:imeOptions="actionNext"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:background="@android:color/transparent"
+                android:textSize="@dimen/_16sdp"
+                android:hint="@string/less_fat_500ml"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textColorHint="@color/colorLightGrey"
+                android:textCursorDrawable="@null"
+
+
+                />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/colorPrimary"
+                android:layout_marginTop="@dimen/_1sdp"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mrp_of_product"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:textColor="@color/colorPrimary"
+                style="@style/CustomTextAppearance.Regular"
+                />
+
+            <EditText
+                android:id="@+id/et_mrp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:imeOptions="actionNext"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:background="@android:color/transparent"
+                android:textSize="@dimen/_16sdp"
+                android:inputType="number"
+                android:hint="Max Price (in Rs.)"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textColorHint="@color/colorLightGrey"
+                android:textCursorDrawable="@null"
+
+
+                />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/colorPrimary"
+                android:layout_marginTop="@dimen/_1sdp"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Discount Type"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:textColor="@color/colorPrimary"
+                style="@style/CustomTextAppearance.Regular"
+                />
+
+          <!--  <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">-->
+
+
+
+            <TextView
+                android:id="@+id/tv_discount_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:imeOptions="actionNext"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:background="@android:color/transparent"
+                android:textSize="@dimen/_16sdp"
+                android:paddingTop="@dimen/_2sdp"
+                android:paddingBottom="@dimen/_2sdp"
+
+                android:hint="Flat, Percentage"
+
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textColorHint="@color/colorLightGrey"
+                android:textCursorDrawable="@null"
+
+
+                />
+
+             <!--   <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_25sdp"
+
+                    />
+
+            </RelativeLayout>-->
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/colorPrimary"
+                android:layout_marginTop="@dimen/_1sdp"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Discount"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:textColor="@color/colorPrimary"
+                style="@style/CustomTextAppearance.Regular"
+                />
+
+            <EditText
+                android:id="@+id/et_discount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:imeOptions="actionDone"
+                android:maxLines="1"
+                android:inputType="number"
+                android:maxLength="2"
+                android:singleLine="true"
+                android:background="@android:color/transparent"
+                android:textSize="@dimen/_16sdp"
+                android:hint="Discount, if any..."
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textColorHint="@color/colorLightGrey"
+                android:textCursorDrawable="@null"
+
+
+                />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/colorPrimary"
+                android:layout_marginTop="@dimen/_1sdp"
+                />
+
+            <RelativeLayout
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_150sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@color/colorWhite"
+                >
+
+
+            <ImageView
+                android:id="@+id/img_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/_20sdp"
+                />
+
+
+                <ImageView
+                    android:id="@+id/img_camera"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:layout_centerInParent="true"
+                    android:padding="@dimen/_10sdp"
+                    android:src="@drawable/camera"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+    <TextView
+        android:id="@+id/txt_add_product"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorWhite"
+        android:text="Add Product"
+        style="@style/CustomTextAppearance.Bold"
+        android:textSize="@dimen/_16sdp"
+        android:gravity="center"
+        />
+
+</RelativeLayout>

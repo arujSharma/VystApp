@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroung"
+    tools:context="vyst.business.activites.ProfileActivity"
+
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:background="@color/colorPrimary"
+        >
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="match_parent"
+
+            android:src="@drawable/back"
+            android:padding="@dimen/_13sdp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/colorWhite"
+            android:text="Feedback"
+            style="@style/CustomTextAppearance.Semibold"
+            android:textSize="@dimen/_16sdp"
+            />
+
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_below="@+id/rl_header"
+        android:background="@color/colorWhite"
+        android:layout_margin="@dimen/_20sdp"
+        >
+
+    <EditText
+        android:id="@+id/et_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:imeOptions="actionDone"
+
+
+
+        android:gravity="top"
+        android:background="@android:color/transparent"
+        android:padding="@dimen/_5sdp"
+
+
+
+        android:textColor="@color/colorBlack"
+
+        android:textColorHint="@color/colorLightGrey"
+        android:textCursorDrawable="@null"
+
+
+        />
+    </LinearLayout>
+    <Button
+        android:id="@+id/tv_send"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_margin="@dimen/_30sdp"
+        android:textColor="@color/colorWhite"
+        android:text="Send"
+        android:layout_below="@+id/ll_feedback"
+        style="@style/CustomTextAppearance.Semibold"
+        android:background="@drawable/button_primary"
+        />
+
+
+
+</RelativeLayout>

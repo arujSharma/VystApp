@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="vyst.business.activites.RegisterShopkeeper">
+
+
+    <ImageView
+        android:id="@+id/img_back"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:src="@drawable/back"
+        android:padding="@dimen/_16sdp"
+        />
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_99sdp"
+        android:src="@drawable/logo"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_below="@+id/img_logo"
+
+
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+
+
+            >
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mobile_number"
+                android:layout_marginTop="@dimen/_20sdp"
+                style="@style/CustomTextAppearance.Regular"
+                android:textColor="@color/colorWhite"
+
+                />
+
+            <EditText
+                android:id="@+id/et_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:imeOptions="actionNext"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:background="@android:color/transparent"
+                android:inputType="number"
+                android:maxLength="10"
+
+                android:hint="@string/enter_your_mobile_no"
+                android:textColor="@color/colorWhite"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textColorHint="@color/colorLightGrey"
+                android:textCursorDrawable="@null"
+
+
+                />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/colorWhite"
+                android:layout_marginTop="@dimen/_2sdp"
+                />
+
+
+            <LinearLayout
+                android:id="@+id/ll_otp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OTP"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:textColor="@color/colorWhite"
+
+                    />
+
+                <EditText
+                    android:id="@+id/et_otp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:imeOptions="actionDone"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:background="@android:color/transparent"
+                    android:inputType="number"
+                    android:maxLength="6"
+
+                    android:hint="Enter you 6 digit OTP"
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColorHint="@color/colorLightGrey"
+                    android:textCursorDrawable="@null"
+
+
+                    />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:background="@color/colorWhite"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp">
+
+                    <TextView
+                        android:id="@+id/tv_change_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Change number"
+                        android:padding="@dimen/_10sdp"
+                        android:textColor="@color/colorWhite"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_resend_otp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Resend OTP"
+                        android:padding="@dimen/_10sdp"
+                        android:textColor="@color/colorWhite"
+
+                        android:layout_alignParentRight="true"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+
+            <Button
+                android:id="@+id/tv_get_otp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:layout_marginBottom="@dimen/_25sdp"
+                android:text="@string/get_otp"
+                style="@style/CustomTextAppearance.Semibold"
+
+
+                android:background="@drawable/button_bg_filled"
+                />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

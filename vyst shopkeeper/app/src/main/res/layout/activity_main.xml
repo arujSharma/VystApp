@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBackgroung"
+    tools:context="vyst.business.activites.MainActivity">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:background="@color/colorPrimary"
+        >
+
+        <ImageView
+            android:id="@+id/img_profile"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="match_parent"
+
+            android:src="@drawable/profile_button"
+            android:scaleType="fitXY"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/colorWhite"
+            android:text="@string/orders"
+            style="@style/CustomTextAppearance.Semibold"
+            android:textSize="@dimen/_16sdp"
+            />
+
+        <ImageView
+            android:id="@+id/img_refresh"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="match_parent"
+
+            android:layout_alignParentRight="true"
+            android:src="@drawable/refresh"
+            android:padding="@dimen/_15sdp"
+            android:scaleType="fitXY"
+            />
+
+        <ImageView
+            android:id="@+id/img_filter"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="match_parent"
+
+            android:layout_toLeftOf="@+id/img_refresh"
+            android:src="@drawable/filter_list"
+            android:padding="@dimen/_11sdp"
+            android:scaleType="fitXY"
+            />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_70sdp"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        >
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".5">
+
+        <TextView
+            android:id="@+id/tv_all"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_15sdp"
+            android:background="@drawable/button_selected"
+            android:textColor="@color/colorPrimary"
+            android:text="ACCEPTED"
+            style="@style/CustomTextAppearance.Semibold"
+            android:gravity="center"
+            />
+
+        <vyst.business.helper.CircularTextView
+            android:id="@+id/circularTextViewAccepted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+
+            android:visibility="gone"
+            android:textSize="@dimen/_10sdp"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/colorWhite"
+            android:layout_margin="@dimen/_10sdp"
+            android:padding="@dimen/_1sdp"
+            android:gravity="center"
+
+            />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".5">
+        <TextView
+            android:id="@+id/tv_pending"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            style="@style/CustomTextAppearance.Semibold"
+            android:layout_margin="@dimen/_15sdp"
+            android:background="@drawable/button_all_bg"
+            android:textColor="@color/colorLightGrey"
+            android:text="PENDING"
+            />
+
+           <!-- <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:text="5"
+                android:layout_margin="@dimen/_10sdp"
+                android:padding="@dimen/_2sdp"
+
+                android:background="@drawable/pending_number"
+                android:layout_alignParentRight="true"
+                />-->
+
+            <vyst.business.helper.CircularTextView
+                android:id="@+id/circularTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5"
+                android:visibility="gone"
+                android:textSize="@dimen/_10sdp"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/colorWhite"
+                android:layout_margin="@dimen/_10sdp"
+                android:padding="@dimen/_1sdp"
+                android:gravity="center"
+
+               />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_orders"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        >
+
+
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/tv_no_accepted_order"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@color/colorPrimary"
+        android:text="No Accepted Order"
+        style="@style/CustomTextAppearance.Semibold"
+        android:gravity="center"
+        />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_orders_pending"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        >
+
+
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/tv_no_pending_order"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@color/colorPrimary"
+        android:text="No Pending Order"
+        style="@style/CustomTextAppearance.Semibold"
+        android:gravity="center"
+        android:visibility="gone"
+        />
+
+
+
+</LinearLayout>

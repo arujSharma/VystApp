@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B3000000" >
+
+    <RelativeLayout
+        android:id="@+id/dialog_rel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/_15sdp"
+        android:background="@drawable/popup_bg_bg" >
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:gravity="center"
+            style="@style/CustomTextAppearance.Regular"
+            android:text="@string/delivery_times"
+            android:textColor="@color/colorDarkGrey"
+            android:textSize="@dimen/_12sdp" />
+
+
+
+        <TextView
+            android:id="@+id/txt_now"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_below="@+id/heading"
+            android:gravity="center"
+            android:text="Now"
+            style="@style/CustomTextAppearance.Regular"
+            android:textColor="@color/colorDarkGrey"
+            android:textSize="@dimen/_17sdp" />
+
+        <TextView
+            android:id="@+id/txt_morning"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_below="@+id/txt_now"
+            android:gravity="center"
+            style="@style/CustomTextAppearance.Regular"
+            android:text="Morning"
+            android:textColor="@color/colorDarkGrey"
+            android:textSize="@dimen/_17sdp" />
+
+        <TextView
+            android:id="@+id/txt_evening"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_below="@+id/txt_morning"
+            android:gravity="center"
+            android:text="Evening"
+            style="@style/CustomTextAppearance.Regular"
+            android:textColor="@color/colorDarkGrey"
+            android:textSize="@dimen/_17sdp" />
+
+
+
+        <TextView
+            android:id="@+id/txt_all_orders"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_below="@+id/txt_evening"
+            android:gravity="center"
+            android:text="All Orders"
+            style="@style/CustomTextAppearance.Bold"
+            android:textColor="@color/colorDarkGrey"
+            android:textSize="@dimen/_17sdp"
+           />
+    </RelativeLayout>
+
+</RelativeLayout>

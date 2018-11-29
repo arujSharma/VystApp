@@ -1,0 +1,83 @@
+{
+  "project_info": {
+    "project_number": "645528509938",
+    "firebase_url": "https://vyst-business.firebaseio.com",
+    "project_id": "vyst-business",
+    "storage_bucket": "vyst-business.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:645528509938:android:4a227ff6ff5fecfd",
+        "android_client_info": {
+          "package_name": "vyst.business"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "645528509938-cobfc9h8u1roktcasku50n6ecm82vee3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "vyst.business",
+            "certificate_hash": "5bd77eedeae94ecc16db8e77f98cfa64f6ed3d56"
+          }
+        },
+        {
+          "client_id": "645528509938-0h17jvrmuv498edhb3dqs79d8snmprtn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "vyst.business",
+            "certificate_hash": "db906491df8de9dc4d31a1f6bf840125cd207388"
+          }
+        },
+        {
+          "client_id": "645528509938-5q59b7nll66lv6hgqgqgmm648uoqgth5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "vyst.business",
+            "certificate_hash": "b69a43f759a911530c9a8c9fa440ed274f068730"
+          }
+        },
+        {
+          "client_id": "645528509938-4bufru4fnlqqm6u4sa85l9vfcpo1hv9m.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "645528509938-4bufru4fnlqqm6u4sa85l9vfcpo1hv9m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSZpkyU3c9C4uTbLIykkBnFXehoDYUKw4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "645528509938-vovnfovedsel2c5o85m748hmuid10ihk.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "Rahul-Goyal.Vyst-Business",
+                "app_store_id": "1373225463"
+              }
+            },
+            {
+              "client_id": "645528509938-4bufru4fnlqqm6u4sa85l9vfcpo1hv9m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

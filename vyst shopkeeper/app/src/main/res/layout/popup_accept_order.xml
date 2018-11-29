@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:alpha="0.7"
+        android:background="@color/colorDarkGrey" />
+
+    <!-- <ScrollView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+
+         >-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+
+        <LinearLayout
+            android:id="@+id/main_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/_20sdp"
+            android:padding="@dimen/_15sdp"
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/colorBlack"
+                android:text="Address Details"
+                android:layout_gravity="center"
+                style="@style/CustomTextAppearance.Semibold"
+                android:textSize="@dimen/_16sdp"
+
+
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/colorLightGrey"
+                android:layout_marginTop="@dimen/_5sdp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/colorPrimary"
+                android:text="I have to deliver to"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_5sdp"
+                style="@style/CustomTextAppearance.Regular"
+                android:textSize="@dimen/_12sdp"
+                />
+
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/colorBlack"
+                android:text="Name"
+                android:maxLines="1"
+                android:layout_marginTop="@dimen/_10sdp"
+                style="@style/CustomTextAppearance.Semibold"
+                android:textSize="@dimen/_16sdp"
+
+
+                />
+            <TextView
+                android:id="@+id/tv_loc_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/colorBlack"
+                android:text="loc address"
+                android:maxLines="1"
+
+                style="@style/CustomTextAppearance.Semibold"
+                android:textSize="@dimen/_16sdp"
+
+
+                />
+
+            <TextView
+                android:id="@+id/tv_address_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/colorBlack"
+                android:text="loc id"
+                android:maxLines="1"
+
+                style="@style/CustomTextAppearance.Semibold"
+                android:textSize="@dimen/_16sdp"
+
+
+                />
+
+
+            <RelativeLayout
+                android:id="@+id/rl_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp"
+                >
+
+                <ImageView
+                    android:id="@+id/img_call"
+                    android:layout_width="@dimen/_17sdp"
+                    android:layout_height="@dimen/_17sdp"
+                    android:src="@drawable/call_icon"
+                    android:layout_centerVertical="true"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_phone_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textColor="@color/colorPrimary"
+                    android:text="phone no"
+                    android:maxLines="1"
+                    android:layout_toRightOf="@+id/img_call"
+
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_centerVertical="true"
+                    style="@style/CustomTextAppearance.Semibold"
+                    android:textSize="@dimen/_16sdp"
+
+
+                    />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textColor="@color/colorBlack"
+                android:text="Messages: "
+
+                android:layout_toRightOf="@+id/img_call"
+
+                android:layout_centerVertical="true"
+                style="@style/CustomTextAppearance.Regular"
+                android:textSize="@dimen/_16sdp"
+
+
+                />
+
+
+
+            <Button
+                android:id="@+id/tv_accept_order"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:textColor="@color/colorWhite"
+                android:text="DELIVER ORDER"
+                android:layout_alignParentBottom="true"
+                style="@style/CustomTextAppearance.Regular"
+                android:background="@drawable/button_primary"
+                />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/close_button"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_alignRight="@+id/main_container"
+            android:layout_alignTop="@+id/main_container"
+            android:layout_marginRight="@dimen/_minus12sdp"
+
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/_minus12sdp"
+            android:src="@drawable/slicing_13" />
+    </RelativeLayout>
+    <!-- </ScrollView>-->
+</RelativeLayout>

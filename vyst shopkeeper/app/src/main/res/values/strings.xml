@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Vyst Business</string>
+    <string name="be_a_shopkeeper">BE A SHOPKEEPER</string>
+    <string name="login">LOGIN</string>
+    <string name="mobile_number">Mobile number</string>
+    <string name="name">Name</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="enter_your_mobile_no">Enter your mobile no.</string>
+    <string name="enter_your_full_address">Enter your full address</string>
+    <string name="submit">SUBMIT</string>
+
+    <string name="check_your_web_address">Please check url or may be your device can not perform this action.</string>
+
+    <string name="please_wait">Please wait...</string>
+    <string name="get_otp">GET OTP</string>
+    <string name="please_check_your_internet_connection">Please check your internet connection.</string>
+    <string name="orders">Orders</string>
+    <string name="my_groceries">My Groceries</string>
+    <string name="list">List</string>
+    <string name="name_of_product">Name of Product</string>
+    <string name="product_description">Product Description</string>
+    <string name="milk_butter_curd">Milk, Butter, Curd...</string>
+    <string name="less_fat_500ml">Less fat, 500ml...</string>
+    <string name="mrp_of_product">MRP of Product</string>
+    <string name="discount_type">Discount Type:</string>
+    <string name="delivery_times">Delivery Times:</string>
+    <string name="options">Options:</string>
+
+</resources>
